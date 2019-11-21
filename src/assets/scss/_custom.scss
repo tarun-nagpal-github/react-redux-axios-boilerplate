@@ -1,0 +1,184 @@
+.ReactTable {
+    border-color: rgba(0, 0, 0, 0.1);
+    .rt-th,
+    .rt-td {
+      padding: 6px;
+      white-space: unset;
+    }
+    .rt-tbody {
+      text-align: left;
+      .rt-tr-group {
+        border-color: rgba(0, 0, 0, 0.1);
+      }
+      .rt-td {
+        border-right: 0;
+        white-space: unset;
+      }
+    }
+    .rt-thead {
+      &.-header {
+        //   background: #d5eefb;
+        //   color: #000;
+        background: #00438a;
+        color: #fff;
+        box-shadow: none;
+        .rt-th {
+          padding: 12px;
+          border-right: none;
+          &.-sort-asc {
+            box-shadow: none;
+            .rt-resizable-header-content::after {
+              box-shadow: none;
+              content: url(/assets/images/asc.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              padding-left:6px;
+            }
+          }
+          &.-sort-desc {
+            box-shadow: none;
+            .rt-resizable-header-content::after {
+              box-shadow: none;
+              content: url(/assets/images/desc.png);
+              background-repeat: no-repeat;
+              background-position: right;
+              padding-left:6px;
+            }
+          }
+        }
+        .rt-tr {
+          text-align: left;
+        }
+        .rt-td {
+          &.-sort-asc {
+            box-shadow: none;
+          }
+          &.-sort-desc {
+            box-shadow: inset 0 -3px 0 #ffffff;
+          }
+        }
+      }
+      &.-filters,
+      &.-filters input,
+      &.-filters select {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+    &.-highlight {
+      .rt-tbody {
+        text-align: left;
+        .rt-tr {
+          &:not(.rt-tr):hover {
+            background: #f7f7f7;
+          }
+        }
+      }
+    }
+    .-pagination {
+      border-top: 0;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+      input,
+      select {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+      .-btn {
+        color: #fff;
+        background: #00438a;
+        width: auto;
+        height: auto;
+        padding: 10px 30px;
+        &:not([disabled]):hover {
+          background: #015294;
+        }
+      }
+      .-next {
+        .-btn {
+          float: right;
+        }
+      }
+      .-btn[disabled] {
+        background: #74acf191;
+        opacity: 1;
+      }
+      .-center {
+        flex: auto;
+        -webkit-box-flex: auto;
+      }
+    }
+    .rt-noData {
+      color: #333333;
+      background: rgba(255, 255, 255, 1);
+    }
+    &.-striped {
+      .rt-tr {
+        &.-odd {
+          background: #f9f6f6a8;
+        }
+        &.-even {
+          background: white;
+        }
+      }
+    }
+  }
+
+
+//   .user-profile .user-profile-card {
+//     position: relative;
+//     padding-top: 0;
+//     overflow: hidden;
+//   }
+  
+//   .user-profile-card .user-profile-header {
+//     background: url("http://lorempixel.com/850/280/nature/4/");
+//     background-size: cover;
+//     height: 135px;
+//   }
+  
+//   .user-profile-card .user-profile-avatar {
+//     position: relative;
+//     top: -100px;
+//     margin-bottom: -100px;
+//     padding: 0 15px;
+//   }
+  
+//   .user-profile-card .user-profile-avatar img {
+//     width: 200px;
+//     height: 200px;
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     border-radius: 50%;
+//     border: 2px solid rgba(255,255,255,0.5);
+//   }
+  
+//   .user-profile small {
+//     display: block;
+//     line-height: 1.428571429;
+//     color: #999;
+//   }
+  
+
+.profileTabs {
+    a{
+        cursor: pointer;
+    }
+}
+
+footer {
+    position: fixed;
+    // height: 100px;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+.fontLight {
+    font-weight: normal;
+}
+
+.profile-bg {
+    background-color: #f6f7f8;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

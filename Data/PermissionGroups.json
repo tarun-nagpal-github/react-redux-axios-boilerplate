@@ -1,0 +1,18 @@
+[
+    {
+        "permissionGroupId": 6,
+        "groupName": "Admin - 1",
+        "userRoleId": 1,
+        "roleName": "Administrator",
+        "createdDate": "2019-11-19T00:00:00",
+        "isActive": true
+    },
+    {
+        "permissionGroupId": 7,
+        "groupName": "Name Values",
+        "userRoleId": 1,
+        "roleName": "Administrator",
+        "createdDate": "2019-11-20T12:18:10.47",
+        "isActive": false
+    }
+]
